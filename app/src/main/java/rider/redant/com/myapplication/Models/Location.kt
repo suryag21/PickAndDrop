@@ -6,11 +6,11 @@ import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "Location")
 data class Location(@PrimaryKey(autoGenerate = true) var id: Long?,
-                    @ColumnInfo(name = "humidity") val name:String,
-                    @ColumnInfo(name = "humidity") val address:String,
-                    @ColumnInfo(name = "humidity") val mobile:String,
-                    @ColumnInfo(name = "humidity") val status:String,
-                    @ColumnInfo(name = "humidity") val link:String
+                    @ColumnInfo(name = "name") val name:String,
+                    @ColumnInfo(name = "address") val address:String,
+                    @ColumnInfo(name = "mobile") val mobile:String,
+                    @ColumnInfo(name = "status") val status:String,
+                    @ColumnInfo(name = "link") val link:String
                     ) {
     constructor():this(null,"","","","","")
 
